@@ -1,0 +1,12 @@
+services:
+  good-hamburguer:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/opt/good-hamburguer"
+    #   - "/opt/good-hamburguer/node_modules"
+    # environment:
+    #   - NEXT_WEBPACK_USEPOLLING=true
+    #   - CHOKIDAR_USEPOLLING=true
+    #   - WATCHPACK_POLLING=true
